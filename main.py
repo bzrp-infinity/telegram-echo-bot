@@ -2,7 +2,7 @@ from aiogram import Bot, Dispatcher, executor, types
 import os
 from keep_alive import keep_alive
 keep_alive()
-
+print(os.environ.get('token'))
 bot = Bot(token=os.environ.get('token'))
 dp = Dispatcher(bot)
 
